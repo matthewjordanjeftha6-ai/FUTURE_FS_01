@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Personal Website | by Matthew Jeftha</title>
+  
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- GLASS NAVIGATION BAR -->
+  <nav class="nav">
+    <div class="nav-left">My Personal Website | by Matthew Jeftha</div>
+    <div class="nav-right">
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- FULLSCREEN MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay">
+    <button class="menu-close" id="menuClose">×</button>
+    <div class="menu-links">
+      <a href="#home" class="menu-link">Home</a>
+      <a href="#portfolio" class="menu-link">Portfolio</a>
+      <a href="#projects" class="menu-link">Projects</a>
+      <a href="#contact" class="menu-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="status-badge">OPEN TO OPPORTUNITIES</div>
+        
+        <h1 class="hero-title">Hello, There! I'm Matthew J Jeftha</h1>
+        <p class="hero-subtitle">Cybersecurity Engineer | Full-stack Web Developer | Penetration Tester</p>
+        
+        <p class="hero-description">
+          Building intelligent, secure, and user-centric web applications — where clean code meets thoughtful design to create real impact.
+        </p>
+
+        <a href="#projects" class="btn btn-dark">View My Work ↓</a>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">PROJECTS</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">8+</div>
+            <div class="stat-label">TECH SKILLS</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">2</div>
+            <div class="stat-label">INTERNSHIPS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <img src="profile.jpg.jpeg" alt="Matthew Jeftha" class="hero-photo">
+      </div>
+    </div>
+  </section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="section">
+  <div class="portfolio-container">
+
+    <h2 class="portfolio-title">Portfolio</h2>
+
+    <!-- CARD 1 -->
+    <div class="portfolio-item">
+
+      <div class="portfolio-content">
+
+        <!-- TEXT -->
+        <div class="portfolio-text">
+          <h3>About My Journey</h3>
+
+          <p>
+            I am a security enthusiast currently pursuing a
+            Higher Certificate in Information Systems
+            (Cybersecurity).
+          </p>
+
+          <p>
+            My approach to security is dual-faceted.
+            I believe that to be a great defender,
+            one must understand the attacker.
+          </p>
+
+          <button class="portfolio-btn"></button>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="portfolio-image">
+          <img src="about.jpg.jpeg" alt="About My Journey">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="portfolio-item">
+
+      <div class="portfolio-content reverse">
+
+        <!-- IMAGE -->
+        <div class="portfolio-image">
+          <img src="skills.jpg.jpeg" alt="Technical Skills">
+        </div>
+
+        <!-- TEXT -->
+        <div class="portfolio-text">
+          <h3>Hands-On<br>Technical Skills</h3>
+
+          <p>
+            While I progress through the CompTIA Track,
+            I am also expanding my technical abilities
+            through PC building, hardware exploration,
+            and hands-on technical learning.
+          </p>
+
+          <button class="portfolio-btn"></button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="portfolio-item">
+
+      <div class="portfolio-content">
+
+        <!-- TEXT -->
+        <div class="portfolio-text">
+          <h3>Internship<br>Opportunities</h3>
+
+          <p>
+            I'm actively seeking internship opportunities
+            to apply my skills in real-world environments
+            while continuing to grow in cybersecurity
+            and technology.
+          </p>
+
+          <button class="portfolio-btn"></button>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="portfolio-image">
+          <img src="internship.jpg.jpeg" alt="Internship Opportunities">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="skills-section">
+  <h2>My Technical Skills</h2>
+  <p><strong>Languages:</strong> Python, JavaScript</p>
+  <p><strong>Frameworks & Libraries:</strong> React.js, Node.js</p>
+  <p><strong>Developer Tools:</strong> Nmap, OWASP ZAP, GitHub, GitHub Actions</p>
+  <p><strong>Concepts:</strong> Full-Stack Development, REST APIs, Secure Coding, DevSecOps, Penetration Testing, Vulnerability Assessment, Linux Administration, CI/CD, Version Control</p>
+</section>
+
+ <!-- PROJECTS SECTION -->
+<section id="projects" class="section">
+  <div class="projects-container">
+    
+    <div class="projects-header">
+      <p class="projects-kicker">// MY WORK</p>
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">Projects that demonstrate practical Software Engineering, Cybersecurity, and User-Centric Design.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="cyber">Cybersecurity</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="ai">AI / ML</button>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="projects-grid">
+      
+      <!-- Card 1 -->
+      <div class=".project-card" data-category="cyber">
+        <div class="project-icon">👨🏾‍💻</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span>Phishing detection</span>
+            <span>Email threat analysis</span>
+            <span>Documentation</span>
+          </div>
+          <h3>Phishing Email & Detection System</h3>
+          <p>A professional Phishing Detection & Awareness Report including phishing email samples, header analysis, and client-ready documentation using Nmap, OWASP ZAP, and MS Word.</p>
+          <a href="https://github.com/matthewjordanjeftha6-ai/FUTURE_CS_02" target="_blank" class="project-link">View →</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class=".project-card" data-category="cyber">
+        <div class="project-icon">👾</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span>Vulnerability analysis</span>
+            <span>Risk classification</span>
+            <span>Security reporting</span>
+          </div>
+          <h3>Vulnerability Assessment Report for a Live Website</h3>
+          <p>A professionally designed Vulnerability Assessment Report with findings and fixes, documented using Nmap, OWASP ZAP, Browser DevTools, and Canva.</p>
+          <a href="https://github.com/matthewjordanjeftha6-ai/FUTURE_CS_02" target="_blank" class="project-link">View →</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class=".project-card" data-category="web">
+        <div class="project-icon">🤳🏾</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span>Front-End Web</span>
+            <span>HTML5</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <h3>Modern Navigation Bar (My Blog Page)</h3>
+          <p>Build a responsive blog page with a modern glass navigation bar using HTML5, CSS, and minimal JavaScript. Built with VS Code, Claude AI, and ChatGPT.</p>
+          <a href="https://github.com/matthewjordanjeftha6-ai/My-Blog-Page" target="_blank" class="project-link">View →</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class=".project-card" data-category="web">
+        <div class="project-icon">🤖</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Node.js</span>
+          </div>
+          <h3>My Personal Website</h3>
+          <p>Build a fully functional and responsive website, with interactive web pages, modern glass nav bar, and a smooth UI/UX. Built with VS Code and Meta AI.</p>
+          <a href="#" class="project-link disabled">View → Coming Soon</a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class=".project-card" data-category="ai">
+        <div class="project-icon">🚀</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span>Python</span>
+            <span>React</span>
+          </div>
+          <h3>Upcoming AI/Web Project</h3>
+          <p>Working on something new. Check back soon for details.</p>
+          <a href="#" class="project-link disabled">View → Coming Soon</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+</section>
+</section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <div class="contact-container">
+      <div class="contact-left">
+        <h1 class="contact-title">Let's Build Something Amazing Together!</h1>
+        <p class="contact-desc">Have an opportunity, a project idea, or just want to say hello? I'm always open to meaningful conversations and collaborations.</p>
+        
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/matthewjeftha" target="_blank" class="contact-link">LinkedIn</a>
+          <a href="https://github.com/matthewjordanjeftha6-ai/" target="_blank" class="contact-link">GitHub</a>
+          <a href="mailto:matthewjordanjeftha6@gmail.com" class="contact-link">Email Me</a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" class="contact-input" required>
+          <input type="email" placeholder="Your Email" class="contact-input" required>
+          <input type="text" placeholder="Subject" class="contact-input" required>
+          <textarea placeholder="Tell me about your project..." class="contact-textarea" rows="5" required></textarea>
+          <button type="submit" class="btn btn-dark btn-full">Send Message</button>
+        </form>
+      </div>
+       
+     <!-- ADD THE FOOTER HERE -->
+      <footer class="footer"
+        <p>Copyright © 2026 Matthew Jeftha Stadios | All rights reserved | South Africa</p> 
+    </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+<script>
+
+const portfolioCards = document.querySelectorAll('.portfolio-item');
+
+const observer = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.2
+});
+
+portfolioCards.forEach((card) => {
+  observer.observe(card);
+});
+
+</script>
+
+</body>
+</html>
